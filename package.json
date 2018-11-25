@@ -1,0 +1,35 @@
+{
+  "name": "allthethings",
+  "version": "1.0.0",
+  "description": "basic RSS reader",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonACliff/allthethings.git"
+  },
+  "keywords": [
+    "RSS"
+  ],
+  "author": "Jason Cliff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JasonACliff/allthethings/issues"
+  },
+  "homepage": "https://github.com/JasonACliff/allthethings#readme",
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "rxjs": "^6.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.4",
+    "jest": "^23.6.0",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
