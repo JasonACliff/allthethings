@@ -1,0 +1,51 @@
+.content {
+	width: 460px;
+	height: 300px;
+	padding: 5px;
+	margin: 10px;
+	background: hsla(216, 87%, 78%, 1);
+}
+
+li {
+	margin: 0;
+	padding: 0;
+	
+}
+
+.content div {
+	transform: translate(-20px, -20px);
+	height: 110px;
+	background: hsla(360, 100%, 100%, 1);
+	padding:5px;
+	width: 440px;
+}
+
+.content h2 {
+	margin: 0;
+	
+}
+
+.content h3 {
+	transform: translate(60px, -80px);
+	width: 380px;
+	height: 150px;
+}
+
+.content time {
+	color: hsla(360, 100%, 100%, 1);
+}
+
+.content img {
+	width: 440px;
+	transform: translate(60px, -70px);
+}
+
+.content a {
+	text-decoration: none;
+	color: hsla(360, 100%, 100%, 1);
+}
+
+.content h2,
+.content data {
+	color: hsla(0, 0%, 0%, 1)
+}
