@@ -1,3 +1,10 @@
 @import url('../js/main/main.css');
 @import url('../js/list-display/list.display.css');
 @import url('../js/list-item/list.item.css');
+
+body {
+	
+	padding: 0px;
+	margin: 0;
+	background: url("../images/main_background.png");
+}

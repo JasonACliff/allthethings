@@ -14,7 +14,7 @@ module.exports = [{
 			
 			{
 				test: /\.js$/,
-				exclude: ['/node_modules/','/src/style/'],
+				exclude: ['/node_modules/', /style/],
 				use: {
 					loader: "babel-loader"
 				}
@@ -48,12 +48,20 @@ module.exports = [{
 		rules: [
 			{
 				test: /\.css$/,
+				exclude:['/js/'],
 				use: [
 					{loader: MiniCssExtractPlugin.loader},
 					"css-loader"
 				],
 				
 			},
+			{
+				test:/\.(png|svg|jpg)$/,
+				use: [{
+					loader:'file-loader',
+					options:{}
+				}]
+			}
 		]
 	}
 }];
