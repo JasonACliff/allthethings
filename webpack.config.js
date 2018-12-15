@@ -1,5 +1,6 @@
-const path = require('path');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require('path')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = [{
 	
@@ -21,7 +22,15 @@ module.exports = [{
 			}
 			
 		]
-	}
+	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			title   : 'Custom template',
+			styleSheet : 'style/styles.css',
+			// Load a custom template (lodash by default)
+			template: 'src/html/index.html'
+		})
+	]
 },
 {
 	entry : './src/style/main.css',
@@ -41,7 +50,7 @@ module.exports = [{
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: "bundle.css"
+			filename: "style/[name].css"
 		})
 	],
 	module: {
@@ -59,7 +68,10 @@ module.exports = [{
 				test:/\.(png|svg|jpg)$/,
 				use: [{
 					loader:'file-loader',
-					options:{}
+					options:{
+						name: '[name].[ext]',
+						outputPath: 'images/'
+					}
 				}]
 			}
 		]
